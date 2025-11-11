@@ -4,60 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css">
 
     <title>Coffee Shop Style Guide</title>
 </head>
 <body>
     
-<main>
-    <h1>Coffee Shop Style Guide</h1>
-    <p>Design tokens and reusable styles for the website.</p>
+    <main>
+        <h1>Coffee Shop Style Guide</h1>
+        <p>Design tokens and reusable styles for the website.</p>
 
-    <section id="colors">
-        <h2>Color Palette</h2>
-    
-        <article class="swatches">
+        <!-- Color Palette -->
+        <section id="colors">
+            <h2>Color Palette</h2>
 
-            <!--Color swatch-->
-            <div class="swatch">
-                <div class="swatch-value bg-primary"></div>
-                <p class="swatch-name">Primary</p>
-            </div>
+            <article class="swatches d-flex gap-w2">
 
-            
-            <!--Color swatch-->
-            <div class="swatch">
-                <div class="swatch-value bg-light"></div>
-                <p class="swatch-name">Light</p>
-            </div>
+                <!-- Color Swatch -->
+                <div class="swatch">
+                    <div class="swatch-value bg-primary"></div>
+                    <p class="swatch-name">Primary</p>
+                </div>
 
-            
-            <!--Color swatch-->
-            <div class="swatch">
-                <div class="swatch-value bg-dark"></div>
-                <p class="swatch-name">Dark</p>
-            </div>
+                <!-- Color Swatch -->
+                <div class="swatch">
+                    <div class="swatch-value bg-light"></div>
+                    <p class="swatch-name">Light</p>
+                </div>
 
+                <!-- Color Swatch -->
+                <div class="swatch">
+                    <div class="swatch-value bg-dark"></div>
+                    <p class="swatch-name">Dark</p>
+                </div>
 
-            <!--Color swatch-->
-            <div class="swatch">
-                <div class="swatch-value bg-muted"></div>
-                <p class="swatch-name">Muted</p>
-            </div>
-        </article>
-    
-    
-    
+                <!-- Color Swatch -->
+                <div class="swatch">
+                    <div class="swatch-value bg-muted"></div>
+                    <p class="swatch-name">Muted</p>
+                </div>
+
+            </article>
+        </section>
+
+        <section id="typography">
+            <h2>Typography</h2>
+
+            <h1 class="heading-xl">Heading XL - Coffee Shop</h1>
+            <h2 class="heading-lg">Heading LG - Freshly Brewed</h2>
+            <p>Body Text - Used for general descriptions</p>
+            <p class="text-muted bg-dark">Muted text - for subtle details</p>
+        </section>
+
+<!--Sapcing and sizing-->
+    <section id="spacing">
+        <h2>Spacing and Sizing</h2>
+
+          <div class="bg-muted p-o m-1">.p-0-padding</div>
+          <div class="bg-muted p-1 m-1">.p-1-padding</div>
+          <div class="bg-muted p-2 m-1">.p-2-padding</div>
+          <div class="bg-muted p-3 m-1">.p-3-padding</div>
     </section>
 
-    <section id="typography">
-        <h2>Typography</h2>
+<!--Layout Units-->
+    <section Id="layout">
+        <h2>Layout Units</h2>
 
-        <h1 class="heading-xl">Heading XL - Coffee Shop</h1>
-        <h2 class="heading-lg">Heading LG - Freshly Brewed</h2>
-        <p>Body Text - Used for general descriptions</p>
-        <p class="text-muted">Muted text - for subtle details</p>
+        <div class="d-flex flex-between">
+            <strong>Label</strong> <!--Bold-->
+            <span>Value</span> <!--text-->
+        </div>
+        
+    <div class="grid-2col gap-2 m-2">
+        <div class="bg-muted p-2">Col 1</div>
+        <div class="bg-muted p-2">Col 2</div>
+        <div class="bg-muted p-2">Col 3</div>
+    </div>
+
+    </section>
+
+    <!--Buttons and links-->
+    <section Id="buttons">
+        <h2>Buttons and Links</h2>
+        <button class="btn btn-primary">Primary Buttons</button>
+        <button class="btn btn-secondary">Seconday Button</button>
+        <a href="#" class="link">Inline Link</a>
     </section>
 </main>
 
