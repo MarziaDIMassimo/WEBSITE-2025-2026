@@ -96,6 +96,9 @@ h1, h2, h3, h4, h5, h6 {
 .text-dark { color: var(--dark); }
 .text-muted { color: var(--muted); }
 
+.shadow-dark { box-shadow: var(--shadow-dark); }
+.shadow-light { box-shadow: var(--shadow-light); }
+
 /*********************** COMPONENTS ***********************/
 .product-image {
     position: relative;
@@ -103,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-image img {
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 10/ 5;
     width: 100%;
     object-fit: cover;
 
@@ -126,7 +129,26 @@ h1, h2, h3, h4, h5, h6 {
     left: var(--space-2);
 }
 
+.tags {
+    display: flex;
+    gap: var(--space-1);
+    list-style: none;
+}
+.tags .tag-item {
+    background-color: var(--primary);
+    color: var(--light);
+    text-decoration: none;
+
+    border-radius: var(--space-2);
+    padding: var(--space-1) var(--space-2);
+}
+
 /*********************** LAYOUT ***********************/
+.container {
+    max-width: 1280px;
+    margin: var(--space-2) auto var(--space-0);
+}
+
 .d-flex { display: flex; }
 
 .flex-between { justify-content: space-between; }
@@ -163,7 +185,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .swatch .swatch-value {
-    aspect-ratio: 1 / 1;
+    aspect-ratio: 0.5 / 5;
     width: 4rem; /* em - Root font size (16px) */
     border-radius: 100%;
     box-shadow: var(--shadow-dark);
@@ -172,3 +194,21 @@ h1, h2, h3, h4, h5, h6 {
 .swatch .swatch-name {
     text-align: center;
 }
+
+
+/***********************TEXT**************************/
+
+
+.line-2 {
+    display: -webkit-box;/*chrome-based browsers*/
+    /*display: -moz-box; (Firefox)*/
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    line-clamp: 2;
+
+    height: 3em;
+    overflow: clip;
+    text-overflow: ellipsis;
+}
+
+
