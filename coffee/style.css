@@ -106,7 +106,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .product-image img {
-    aspect-ratio: 10/ 5;
+    aspect-ratio: 16 / 9;
     width: 100%;
     object-fit: cover;
 
@@ -127,6 +127,33 @@ h1, h2, h3, h4, h5, h6 {
     position: absolute;
     top: var(--space-2);
     left: var(--space-2);
+}
+
+.profile {
+    display: grid;
+    grid-template-rows: repeat(2 , 1fr);
+    grid-template-columns: auto 1fr;
+
+    column-gap: var(--space-2);
+}
+
+.profile img{
+    grid-column: 1;
+    grid-row: span 2;
+    aspect-ratio: 1/1;
+    width: 3rem;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.profile .name{
+    grid-column: 2;
+    grid-row: span 1;
+}
+
+.profile .job-title{
+    grid-column: 2;
+    grid-row: span 2;
 }
 
 .tags {
@@ -185,7 +212,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .swatch .swatch-value {
-    aspect-ratio: 0.5 / 5;
+    aspect-ratio: 1 / 1;
     width: 4rem; /* em - Root font size (16px) */
     border-radius: 100%;
     box-shadow: var(--shadow-dark);
@@ -195,13 +222,20 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
 }
 
+/*********************** TEXT ***********************/
+.line-1 {
+    display: -webkit-box; /* Chrome-based browsers */
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    line-clamp: 1;
 
-/***********************TEXT**************************/
-
+    height: 1.5em;
+    overflow: clip;
+    text-overflow: ellipsis;
+}
 
 .line-2 {
-    display: -webkit-box;/*chrome-based browsers*/
-    /*display: -moz-box; (Firefox)*/
+    display: -webkit-box; /* Chrome-based browsers */
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 2;
     line-clamp: 2;
@@ -210,5 +244,4 @@ h1, h2, h3, h4, h5, h6 {
     overflow: clip;
     text-overflow: ellipsis;
 }
-
 
