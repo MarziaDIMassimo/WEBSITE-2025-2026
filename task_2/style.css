@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+    /* will force elements to scale from the border instead */
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    margin: 0;
+    font-family: Blacker Sans Pro;
+}
+
+header {
+    position: relative;
+    height: 600px;
+    background-color: #000043;
+    overflow: hidden;
+}
+
+header .nav .logo{
+   color: white;
+} 
+
+header .banner{
+   color: white;
+} 
